@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap');
+
+.wrapper {
+  background-color: #1c1a19;
+  height: 100vh;
+  background-image: url('./images/bg-header-mobile.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 35%;
+}
+
+.tool-bar {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #3c3a39;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  margin-right: auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem 1rem 2rem;
+  margin: 2rem 1rem 0 1rem;
+}
+
+.head-main-title {
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.head-main-sub-title {
+  color: #fff5e1;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-top: -2rem;
+}
+
+.head-main-description {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  margin-top: -1rem;
+}
+
+.social {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: start;
+  margin: 1rem 3rem;
+}
+
+.social i {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.social > a {
+  text-decoration: none;
+}
+
+.social:hover {
+  cursor: pointer;
+}
