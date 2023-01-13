@@ -25,6 +25,12 @@
   margin-right: auto;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo:hover {
+  cursor: pointer;
 }
 
 .headline {
@@ -39,7 +45,7 @@
 .head-main-title {
   color: #ff6b00;
   font-family: 'Crete Round', serif;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: normal;
 }
 
@@ -47,14 +53,14 @@
   color: #fff5e1;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-top: -2rem;
 }
 
 .head-main-description {
   color: #fff;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-top: -1rem;
 }
 
