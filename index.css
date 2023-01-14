@@ -8,6 +8,7 @@ body {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap');
 
 .wrapper {
   background-color: #1c1a19;
@@ -16,6 +17,7 @@ body {
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 35%;
+  padding-bottom: 2rem;
 }
 
 .tool-bar {
@@ -87,4 +89,76 @@ body {
 
 .social:hover {
   cursor: pointer;
+}
+
+.recent-title {
+  font-family: 'Crete Round', serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-align: center;
+  margin: 7.5rem 0 0 0;
+}
+
+hr {
+  margin: 0 2rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.work-section {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 1rem 2rem;
+}
+
+.first-project {
+  min-width: 337px;
+  height: 237px;
+}
+.project-title {
+  font-size: 2rem;
+  font-family: 'Crete Round', serif;
+  font-weight: normal;
+  font-weight: 500;
+}
+
+.used-tools {
+  list-style-type: none;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin: 0.5rem 0 1.1rem 0;
+  padding: 0;
+}
+
+.used-tools>li {
+  font-size: 1rem;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  margin-right: 1rem;
+}
+
+.project-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  margin-top: -0.5rem;
+}
+
+.see-project-btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #ff6b00;
+  border: none;
+  color: #fff;
+  width: 7.75rem;
+  height: 3rem;
 }
