@@ -212,9 +212,6 @@ hr {
 
 .about-me {
   background-color: #1c1a19;
-  background-image: url('./images/illustration-about-me-mobile.png');
-  background-repeat: no-repeat;
-  background-position: right center;
 }
 
 .about {
@@ -222,7 +219,13 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 7.5rem 1.5rem;
+  margin: 5.5rem 1.5rem;
+  padding-bottom: 7.5rem;
+  padding-top: 3rem;
+  background-image: url('./images/illustration-about-me-mobile.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 40%;
 }
 
 .about-title {
