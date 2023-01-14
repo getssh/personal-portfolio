@@ -51,7 +51,7 @@ body {
 .head-main-title {
   color: #ff6b00;
   font-family: 'Crete Round', serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: normal;
 }
 
@@ -59,14 +59,14 @@ body {
   color: #fff5e1;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-top: -2rem;
 }
 
 .head-main-description {
   color: #fff;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: -1rem;
 }
 
