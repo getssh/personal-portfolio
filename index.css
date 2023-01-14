@@ -247,5 +247,34 @@ hr {
 }
 
 .skills {
-  margin: 7.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 1.5rem;
+  color: #fff;
+}
+
+.skills h3 {
+  display: inline;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.skills i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #ff6b00;
+}
+
+.sub-skill>li {
+  list-style-type: none; 
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  margin: 1rem 0.75rem 1rem 2rem;
+}
+
+.fa-diamond {
+  margin-top: 3.5rem;
 }
