@@ -12,12 +12,11 @@ body {
 
 .wrapper {
   background-color: #1c1a19;
-  height: 100vh;
   background-image: url('./images/bg-header-mobile.png');
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 35%;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .tool-bar {
@@ -46,7 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 3rem 2rem 1rem 2rem;
-  margin: 2rem 1rem 0 1rem;
+  margin: 0 1rem;
 }
 
 .head-main-title {
@@ -161,4 +160,49 @@ hr {
   color: #fff;
   width: 7.75rem;
   height: 3rem;
+}
+
+.see-project-btn:hover {
+  color: #f55800;
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+.see-project-btn:active {
+  color: #f4f1f0;
+  background-color: #e05304;
+  border: none;
+}
+
+.not-featured {
+  background-image: url('./images/project_bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.not-featured-title {
+  padding-top: 4rem;
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.not-featured-desc {
+  color: #fff;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.tools-bottom {
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.tools-bottom>li {
+  background-color: rgba(255, 255, 255, 0.24);
+  border: none;
+}
+
+.full-width-btn {
+  width: 100%;
 }
