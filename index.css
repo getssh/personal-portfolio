@@ -123,6 +123,7 @@ hr {
   min-width: 337px;
   height: 237px;
 }
+
 .project-title {
   font-size: 2rem;
   font-family: 'Crete Round', serif;
@@ -139,7 +140,7 @@ hr {
   padding: 0;
 }
 
-.used-tools>li {
+.used-tools > li {
   font-size: 1rem;
   padding: 10px 12px;
   border: 1px solid #8993a4;
@@ -200,7 +201,7 @@ hr {
   color: #fff;
 }
 
-.tools-bottom>li {
+.tools-bottom > li {
   background-color: rgba(255, 255, 255, 0.24);
   border: none;
 }
@@ -224,8 +225,8 @@ hr {
   margin: 7.5rem 1.5rem;
 }
 
+
 .about-title {
-  color: #fff;
   font-family: 'Crete Round', serif;
   font-size: 4.5rem;
   font-weight: normal;
@@ -268,8 +269,8 @@ hr {
   color: #ff6b00;
 }
 
-.sub-skill>li {
-  list-style-type: none; 
+.sub-skill > li {
+  list-style-type: none;
   font-family: 'Inter', sans-serif;
   font-size: 1.2rem;
   margin: 1rem 0.75rem 1rem 2rem;
