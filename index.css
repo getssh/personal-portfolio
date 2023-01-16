@@ -132,13 +132,12 @@ hr {
 
 .used-tools {
     list-style-type: none;
-    float: right;
-    display: inline;
     margin: 0.5rem 0 1.1rem 0;
     padding: 0;
 }
 
 .used-tools>li {
+    float: left;
     font-size: 1rem;
     padding: 10px 12px;
     border: 1px solid #8993a4;
@@ -196,8 +195,6 @@ hr {
 
 .tools-bottom {
     margin-left: 1rem;
-    float: right;
-    display: inline;
     color: #fff;
 }
 
