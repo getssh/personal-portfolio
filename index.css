@@ -294,10 +294,35 @@ hr {
 }
 
 .contact-header p {
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 44px;
     letter-spacing: 0em;
     text-align: center;
+}
+
+.contact-inputs {
+  margin-left: 2rem;
+}
+
+input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom:1px solid #dbd8d7;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+textarea {
+  background-color: #FBF8F7;
+  border: none;
+  max-height: 5rem;
+  padding-top: 0.7rem;
+  padding-left: 0.7rem;
+}
+
+.btn {
+  height: 2.5rem;
 }
