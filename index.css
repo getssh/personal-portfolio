@@ -303,26 +303,31 @@ hr {
 }
 
 .contact-inputs {
-  margin-left: 2rem;
+    margin-left: 2rem;
 }
 
 input {
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom:1px solid #dbd8d7;
-  padding: 10px;
-  margin-bottom: 8px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #dbd8d7;
+    padding: 15px;
+    margin-bottom: 8px;
+    width: 100%;
 }
 
 textarea {
-  background-color: #FBF8F7;
-  border: none;
-  max-height: 5rem;
-  padding-top: 0.7rem;
-  padding-left: 0.7rem;
+    background-color: #FBF8F7;
+    border: none;
+    max-height: 6rem;
+    padding-top: 0.7rem;
+    padding-left: 0.7rem;
+    margin-top: 10px;
 }
 
-.btn {
-  height: 2.5rem;
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
 }
