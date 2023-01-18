@@ -120,7 +120,7 @@ hr {
 }
 
 .first-project {
-  min-width: 337px;
+  max-width: 100%;
   height: 237px;
 }
 
@@ -136,6 +136,7 @@ hr {
   display: flex;
   justify-content: start;
   align-items: start;
+  flex-wrap: wrap;
   margin: 0.5rem 0 1.1rem 0;
   padding: 0;
 }
@@ -280,4 +281,55 @@ hr {
 
 .fa-diamond {
   margin-top: 3.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 7.5rem 2rem;
+}
+
+.contact-form > h3 {
+  font-family: 'Inter', sans-serif;
+  line-height: 2.75rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0.2rem;
+  padding-bottom: 3.6rem;
+}
+
+.contact-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+
+input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #dbd8d7;
+  margin-bottom: 1.5rem;
+  width: inherit;
+  padding: 0.8rem;
+}
+
+textarea {
+  background-color: #fbf8f7;
+  border: none;
+  max-height: 7rem;
+  padding-top: 0.7rem;
+  padding-left: 0.7rem;
+  margin-top: 10px;
+  width: inherit;
+}
+
+.btn {
+  margin-top: 1.5rem;
 }
