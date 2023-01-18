@@ -287,24 +287,26 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  margin: 7.5rem 2rem;
 }
 
-.contact-header {
-  padding: 40px;
-}
-
-.contact-header p {
+.contact-form > h3 {
   font-family: 'Inter', sans-serif;
-  font-size: 1.5rem;
+  line-height: 2.75rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  line-height: 44px;
-  letter-spacing: 0;
   text-align: center;
+  margin: 0 0.2rem;
+  padding-bottom: 3.6rem;
 }
 
 .contact-inputs {
-  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
 }
 
 input {
@@ -312,23 +314,21 @@ input {
   border-right: none;
   border-left: none;
   border-bottom: 1px solid #dbd8d7;
-  padding: 15px;
-  margin-bottom: 8px;
-  width: 100%;
+  margin-bottom: 1.5rem;
+  width: inherit;
+  padding: 0.8rem;
 }
 
 textarea {
   background-color: #fbf8f7;
   border: none;
-  max-height: 6rem;
+  max-height: 7rem;
   padding-top: 0.7rem;
   padding-left: 0.7rem;
   margin-top: 10px;
+  width: inherit;
 }
 
-.action {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-}
+ .btn {
+  margin-top: 1.5rem;
+ }
