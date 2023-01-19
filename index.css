@@ -141,7 +141,7 @@ hr {
   justify-content: start;
   align-items: start;
   flex-wrap: wrap;
-  margin: 0.5rem 0 1.1rem 0;
+  margin: 0.5rem 0;
   padding: 0;
 }
 
@@ -149,7 +149,7 @@ hr {
   font-size: 1rem;
   padding: 10px 12px;
   border: 1px solid #8993a4;
-  margin: 0.6rem 1rem 0 0;
+  margin: 0.6rem 0.19rem 0 0;
 }
 
 .project-description {
@@ -247,11 +247,15 @@ hr {
     flex-direction: row-reverse;
     justify-content: flex-start;
     align-items: center;
-    width: 70%;
+    width: 50%;
   }
   
   .headline {
     align-items: flex-start;
+  }
+
+  .head-main-title {
+    margin-top: 0;
   }
 
   .social {
@@ -259,7 +263,16 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 3rem;
+    padding: 10rem 0.5rem;
+    margin: 1rem;
+  }
+
+  .social li {
+    margin: -0.2rem;
+  }
+
+  .social i {
+    font-size: 1.2rem;
   }
 
   .work-section {
@@ -269,18 +282,25 @@ hr {
   .featured {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    gap: 0 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .top-img {
+    width: 40%;
   }
 
   .first-project {
-    flex-basis: 70%;
     height: auto;
+    width: 100%;
   }
 
   .pro-detail {
-    padding-right: 10%;
-    align-self: flex-start;
+    height: auto;
+    /* padding-left: 2%; */
+    align-self: center;
+    flex-shrink: 15;
     margin-top: -2rem;
     padding-bottom: 2rem;
   }
@@ -296,12 +316,24 @@ hr {
     padding: 1rem 0 0 0;
   }
 
+  .not-featured:hover {
+    background-image: url('images/hover-bg.png');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+  }
+
   .not-featured .see-project-btn {
     display: none;
   }
 
+  .not-featured:hover > * {
+    visibility: hidden;
+  }
   .not-featured:hover .see-project-btn {
     display: block;
+    visibility: visible;
+    align-self: flex-start;
   }
 
   .pro-top {
