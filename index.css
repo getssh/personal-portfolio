@@ -494,7 +494,7 @@ textarea {
 
   .work-section {
     margin-top: 4rem;
-    padding: 6rem 0;
+    padding: 0 0 6rem 0;
   }
 
   .about {
@@ -547,6 +547,22 @@ textarea {
   .about-me {
     margin-right: -1rem;
     padding-right: 0;
+  }
+
+  .top-header {
+    display: flex;
+    margin: 7rem 6rem -5rem 6rem;
+    padding: 0 4rem;
+  }
+
+  .recent-title {
+    align-self: flex-start;
+    margin-top: 0;
+  }
+
+  .separate-line {
+    flex-grow: 2;
+    align-self: flex-end;
   }
 }
 
