@@ -15,8 +15,8 @@ body {
   background-image: url('./images/bg-header-mobile.png');
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-size: 35%;
-  padding-bottom: 3rem;
+  background-size: 25%;
+  padding-bottom: 5rem;
 }
 
 .tool-bar {
@@ -25,6 +25,10 @@ body {
   color: #fff;
   background-color: #3c3a39;
   padding: 1rem 2rem;
+}
+
+.tool-bar > nav > ul {
+  display: none;
 }
 
 .logo {
@@ -44,7 +48,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 2rem 1rem 2rem;
+  padding: 3rem 2rem 1rem 0;
   margin: 0 1rem;
 }
 
@@ -75,12 +79,12 @@ body {
   gap: 1.5rem;
   justify-content: start;
   flex-wrap: wrap;
-  margin: 1rem 3rem;
+  margin: 1rem 3rem 1rem -1.1rem;
 }
 
 .social i {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .social > a {
@@ -119,6 +123,14 @@ hr {
   margin: 1rem 2rem;
 }
 
+.projects li {
+  font-family: 'Inter', sans-serif;
+}
+
+.top-img {
+  align-self: center;
+}
+
 .first-project {
   max-width: 100%;
   height: 237px;
@@ -137,7 +149,7 @@ hr {
   justify-content: start;
   align-items: start;
   flex-wrap: wrap;
-  margin: 0.5rem 0 1.1rem 0;
+  margin: 0.5rem 0;
   padding: 0;
 }
 
@@ -145,7 +157,7 @@ hr {
   font-size: 1rem;
   padding: 10px 12px;
   border: 1px solid #8993a4;
-  margin-right: 1rem;
+  margin: 0.6rem 0.19rem 0 0;
 }
 
 .project-description {
@@ -169,6 +181,7 @@ hr {
   color: #f55800;
   background-color: #fff5e1;
   border: 1px solid #f55800;
+  cursor: pointer;
 }
 
 .see-project-btn:active {
@@ -276,7 +289,7 @@ hr {
   list-style-type: none;
   font-family: 'Inter', sans-serif;
   font-size: 1.2rem;
-  margin: 1rem 0.75rem 1rem 2rem;
+  margin: 1.2rem 0.75rem 1rem 2rem;
 }
 
 .fa-diamond {
@@ -332,4 +345,255 @@ textarea {
 
 .btn {
   margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    background-image: url('./images/Illustration-header.png');
+    background-position: right center;
+    background-size: 45%;
+    padding-bottom: 2rem;
+  }
+
+  .social li {
+    margin: -0.2rem;
+    list-style: none;
+  }
+
+  .skills i {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .sub-skill li {
+    margin-left: 0;
+  }
+
+  .social i {
+    font-size: 1.2rem;
+  }
+
+  .tool-bar > nav > i {
+    display: none;
+  }
+
+  .tool-bar > nav > ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    margin-right: 3rem;
+  }
+
+  .tool-bar li {
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .tool-bar li:hover {
+    cursor: pointer;
+  }
+
+  .headline-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+  }
+
+  .headline {
+    align-items: flex-start;
+  }
+
+  .head-main-title {
+    margin-top: 0;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10rem 0.5rem;
+    margin: 1rem;
+  }
+
+  .featured {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .top-img {
+    width: 40%;
+  }
+
+  .first-project {
+    height: auto;
+    width: 100%;
+  }
+
+  .pro-detail {
+    height: auto;
+
+    /* padding-left: 2%; */
+    align-self: center;
+    flex-shrink: 15;
+    margin-top: -2rem;
+    padding-bottom: 2rem;
+  }
+
+  .projects-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1rem 4rem;
+  }
+
+  .not-featured {
+    margin: 0.4rem;
+    padding: 2rem 0 0 0;
+    justify-content: space-evenly;
+  }
+
+  .not-featured-desc {
+    margin-bottom: 0;
+  }
+
+  .not-featured:nth-child(2),
+  .not-featured:nth-child(5) {
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.9)
+      ),
+      url('images/Img-Placeholder1.png');
+  }
+
+  .not-featured:nth-child(3),
+  .not-featured:nth-child(6) {
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.9)
+      ),
+      url('images/Img-Placeholder2.png');
+  }
+
+  .not-featured:nth-child(1),
+  .not-featured:nth-child(4) {
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.9)
+      ),
+      url('images/hover-bg.png');
+  }
+
+  .not-featured:hover {
+    background-image: url('images/hover-bg.png');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .not-featured .see-project-btn {
+    display: none;
+  }
+
+  .not-featured:hover > * {
+    visibility: hidden;
+  }
+
+  .not-featured:hover .see-project-btn {
+    display: block;
+    visibility: visible;
+    align-self: flex-start;
+  }
+
+  .pro-top {
+    margin: 0 4rem;
+  }
+
+  .work-section {
+    margin-top: 4rem;
+    padding: 0 0 6rem 0;
+  }
+
+  .about {
+    display: flex;
+    padding-right: 40%;
+    padding-bottom: 5rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    background-image: url('images/about-desktop-bg.png');
+    background-position: center right;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-form h3 {
+    width: 60%;
+    text-align: left;
+    margin-right: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .contact-form .btn {
+    align-self: flex-start;
+  }
+
+  .featured,
+  .projects-wrap,
+  .work-section,
+  .headline-wrap,
+  .contact-form {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .about-me {
+    margin-right: -1rem;
+    padding-right: 0;
+  }
+
+  .top-header {
+    display: flex;
+    margin: 7rem 6rem -5rem 6rem;
+    padding: 0 4rem;
+  }
+
+  .recent-title {
+    align-self: flex-start;
+    margin-top: 0;
+  }
+
+  .separate-line {
+    flex-grow: 2;
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .featured,
+  .projects-wrap,
+  .work-section,
+  .headline-wrap,
+  .contact-form {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 }
