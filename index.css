@@ -345,6 +345,17 @@ textarea {
 
 .btn {
   margin-top: 1.5rem;
+  transition: background-color 1s, color 1s, border 1s;
+}
+
+.not-featured:hover {
+  transform: scale(1.05);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
 }
 
 @media screen and (min-width: 768px) {
@@ -463,32 +474,17 @@ textarea {
 
   .not-featured:nth-child(2),
   .not-featured:nth-child(5) {
-    background-image:
-      linear-gradient(
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.9)
-      ),
-      url('images/Img-Placeholder1.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('images/Img-Placeholder1.png');
   }
 
   .not-featured:nth-child(3),
   .not-featured:nth-child(6) {
-    background-image:
-      linear-gradient(
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.9)
-      ),
-      url('images/Img-Placeholder2.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('images/Img-Placeholder2.png');
   }
 
   .not-featured:nth-child(1),
   .not-featured:nth-child(4) {
-    background-image:
-      linear-gradient(
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.9)
-      ),
-      url('images/hover-bg.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('images/hover-bg.png');
   }
 
   .not-featured:hover {
