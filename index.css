@@ -345,6 +345,13 @@ textarea {
 
 .btn {
   margin-top: 1.5rem;
+  transition: background-color 1s, color 1s, border 1s;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
 }
 
 @media screen and (min-width: 768px) {
