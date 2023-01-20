@@ -123,6 +123,10 @@ hr {
   margin: 1rem 2rem;
 }
 
+.projects li {
+  font-family: 'Inter', sans-serif;
+}
+
 .top-img {
   align-self: center;
 }
@@ -353,6 +357,7 @@ textarea {
 
   .social li {
     margin: -0.2rem;
+    list-style: none;
   }
 
   .skills i {
