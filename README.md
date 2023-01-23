@@ -4,7 +4,7 @@
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Personal Portfolio</b></h3>
 
 </div>
 
@@ -31,11 +31,11 @@
 - [📝 License](#license)
 
 
-# 📖 [Portfolio: setup and mobile first] <a name="about-project"></a>
+# 📖 [Portfolio] <a name="about-project"></a>
 
 This is a project for personal portfolio Which will be used to show personal skills, expriances and projects once it's completed.
 
-**[Portfolio: setup and mobile first]** is a project for personal portfolio Which will be used to show personal skills, expriances and projects once it's completed.
+**[Portfolio]** is a project for personal portfolio Which will be used to show personal skills, expriances and projects.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -79,7 +79,7 @@ This is a project for personal portfolio Which will be used to show personal ski
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link]()
+- [https://getssh.github.io/personal-portfolio/]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
