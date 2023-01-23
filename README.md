@@ -79,7 +79,7 @@ This is a project for personal portfolio Which will be used to show personal ski
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [<a href="https://getssh.github.io/personal-portfolio/>Live Demo</a>]()
+- <a href="https://getssh.github.io/personal-portfolio/">Live Demo</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
