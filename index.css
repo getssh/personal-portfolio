@@ -74,6 +74,11 @@ body {
   margin-top: -1rem;
 }
 
+nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .social {
   display: flex;
   gap: 1.5rem;
@@ -272,7 +277,7 @@ hr {
   color: #fff;
 }
 
-.skills h3 {
+.skills p {
   display: inline;
   font-size: 2rem;
   font-weight: 600;
@@ -304,7 +309,7 @@ hr {
   margin: 7.5rem 2rem;
 }
 
-.contact-form > h3 {
+.contact-form > p {
   font-family: 'Inter', sans-serif;
   line-height: 2.75rem;
   font-size: 1.8rem;
@@ -539,7 +544,7 @@ textarea {
     flex-direction: row;
   }
 
-  .contact-form h3 {
+  .contact-form p {
     width: 60%;
     text-align: left;
     margin-right: 2.5rem;
