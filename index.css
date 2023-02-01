@@ -366,16 +366,19 @@ textarea {
 .tool-bar-mob {
   position: sticky;
   width: 100%;
-  display: block;
+  display: none;
 }
+
 .tool-bar-mob > nav > ul {
   display: block;
   list-style-type: none;
 }
 
-.tool-bar-mob .logo, .tool-bar-mob > nav > i {
+.tool-bar-mob .logo,
+.tool-bar-mob > nav > i {
   display: none;
 }
+
 .tool-bar-mob > nav {
   height: 100vh;
   display: flex;
@@ -390,15 +393,17 @@ textarea {
   font-size: 3rem;
   margin: 0 0 2rem 0;
   font-weight: 700;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
 }
 
-
+.tool-bar-mob > nav > ul > li > a {
+  color: #fff5e1;
+}
 
 .tool-bar-mob > .close {
   font-size: 2.5rem;
   position: absolute;
-  top: 1;
+  top: 1rem;
   right: 3rem;
 }
 
