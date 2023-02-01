@@ -13,10 +13,25 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="tool-bar">
+    <header class="tool-bar tool-bar-mob">
       <a href="#" class="logo">John Doe</a>
+      <i class="fa-solid fa-xmark close"></i>
       <nav>
         <i class="fa-solid fa-bars fa-2x"></i>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+          <li><div class="linee"></div></li>
+          <li class="nav-item"><a href="#about-mee">About</a></li>
+          <li><div class="linee"></div></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+          <li><div class="linee"></div></li>
+        </ul>
+      </nav>
+    </header>
+    <header class="tool-bar tool-bar-desk">
+      <a href="#" class="logo">John Doe</a>
+      <nav>
+        <i class="fa-solid fa-bars test fa-2x"></i>
         <ul>
           <li><a href="">Portfolio</a></li>
           <li><a href="">About</a></li>
@@ -53,7 +68,7 @@
       <hr/>
     </div>
   </div>
-  <section class="work-section">
+  <section class="work-section" id="portfolio">
     <div class="projects featured pro-top">
       <div class="top-img">
         <img src="./images/ImgPlaceholder.png" alt="featured project" class="first-project">
@@ -133,7 +148,7 @@
       </div>
     </div>
   </section>
-  <section class="about-me work-section">
+  <section class="about-me work-section" id="about-mee">
     <div class="about">
       <h1 class="about-title">About me</h1>
       <p class="about-detail">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -179,7 +194,7 @@
 
     </div>
   </section>
-  <section class="contact-form">
+  <section class="contact-form" id="contact">
     <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
     <form action="https://formspree.io/f/xbjelybo" method="POST" class="contact-inputs">
         <input type="text" name="full-name" id="full-name" placeholder="Full name" maxlength="30" required>
@@ -188,5 +203,6 @@
         <button type="submit" class="btn see-project-btn">Get in touch</button>
     </form>
 </section>
+<script src="./index.js"></script>
 </body>
 </html>
