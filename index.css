@@ -363,6 +363,58 @@ textarea {
   border: 1px solid #ff6b00;
 }
 
+.tool-bar-mob {
+  position: sticky;
+  width: 100%;
+  display: block;
+}
+.tool-bar-mob > nav > ul {
+  display: block;
+  list-style-type: none;
+}
+
+.tool-bar-mob .logo, .tool-bar-mob > nav > i {
+  display: none;
+}
+.tool-bar-mob > nav {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10rem;
+  margin-left: -2rem;
+  position: relative;
+  width: 100%;
+}
+
+.tool-bar-mob > nav > ul > li {
+  font-size: 3rem;
+  margin: 0 0 2rem 0;
+  font-weight: 700;
+  font-family: 'Inter';
+}
+
+
+
+.tool-bar-mob > .close {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 1;
+  right: 3rem;
+}
+
+.tool-bar-mob > .close:hover {
+  cursor: pointer;
+}
+
+.linee {
+  background-color: #fff;
+  width: 85%;
+  overflow: hidden;
+  height: 1px;
+  position: absolute;
+  margin-top: -1.5rem;
+}
+
 @media screen and (min-width: 768px) {
   .wrapper {
     background-image: url('./images/Illustration-header.png');
