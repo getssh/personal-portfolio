@@ -120,3 +120,13 @@ for (let i = 0; i < projects.length; i+=1) {
 
   projectContainer += webContentNotFeatured;
 }
+
+featuredProject.innerHTML = featuredContent;
+unfeaturedProject.innerHTML = projectContainer;
+
+const mypop = document.querySelector('.popup-wrapper');
+const mybtn = document.querySelector('.see-project-btn')
+
+function proDetail() {
+  mypop.style.display = "block";
+}
