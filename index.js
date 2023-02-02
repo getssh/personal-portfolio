@@ -3,126 +3,109 @@ const navDeskTop = document.querySelector('.tool-bar-desk');
 const humBurger = document.querySelector('.test');
 const closeBtn = document.querySelector('.close');
 const navItems = document.querySelectorAll('.nav-item');
-const unfeaturedProject = document.querySelector('.projects-wrap')
-const featuredProject = document.querySelector('.featured')
-const closePopUP = document.querySelector('.pop-close')
+const unfeaturedProject = document.querySelector('.projects-wrap');
+const featuredProject = document.querySelector('.featured');
 const mypop = document.querySelector('.popup-wrapper');
-const mybtn = document.querySelector('.see-project-btn')
 
 humBurger.addEventListener('click', () => {
-  dropMob.style.display = "block";
-  navDeskTop.style.display = "none";
-
-})
+  dropMob.style.display = 'block';
+  navDeskTop.style.display = 'none';
+});
 
 closeBtn.addEventListener('click', () => {
-  dropMob.style.display = "none";
-  navDeskTop.style.display = "flex";
-})
+  dropMob.style.display = 'none';
+  navDeskTop.style.display = 'flex';
+});
 
-for (let i = 0; i < navItems.length; i+=1) {
+for (let i = 0; i < navItems.length; i += 1) {
   navItems[i].addEventListener('click', () => {
-    dropMob.style.display = "none";
-    navDeskTop.style.display = "flex";
-  })
+    dropMob.style.display = 'none';
+    navDeskTop.style.display = 'flex';
+  });
 }
 
-
-//createing projects daynamically
+// createing projects daynamically
 
 const projects = [{
   featured: true,
-  name: "Multi-Post Stories",
+  name: 'Multi-Post Stories',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  image: "./images/ImgPlaceholder.png",
+  image: './images/ImgPlaceholder.png',
   technologies: [
-    "css", "html", "bootstrap", "Ruby"
+    'css', 'html', 'bootstrap', 'Ruby',
   ],
-  liveLink: "#",
-  sourceLink: "#",
+  liveLink: '#',
+  sourceLink: '#',
   popUpDetail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  popUpImage: "./images/pop-up.png"
+  popUpImage: './images/pop-up.png',
 },
 {
   featured: false,
-  name: "Profesional Art Printing Data",
+  name: 'Profesional Art Printing Data',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  image: "./images/ImgPlaceholder.png",
+  image: './images/ImgPlaceholder.png',
   technologies: [
-    "html", "bootstrap", "Ruby"
+    'html', 'bootstrap', 'Ruby',
   ],
-  liveLink: "#",
-  sourceLink: "#",
+  liveLink: '#',
+  sourceLink: '#',
   popUpDetail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  popUpImage: "./images/pop-up.png"
+  popUpImage: './images/pop-up.png',
 },
 {
   featured: false,
-  name: "Profesional Art Printing Data",
+  name: 'Profesional Art Printing Data',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  image: "./images/ImgPlaceholder.png",
+  image: './images/ImgPlaceholder.png',
   technologies: [
-    "html", "bootstrap", "Ruby"
+    'html', 'bootstrap', 'Ruby',
   ],
-  liveLink: "#",
-  sourceLink: "#",
+  liveLink: '#',
+  sourceLink: '#',
   popUpDetail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  popUpImage: "./images/pop-up.png"
+  popUpImage: './images/pop-up.png',
 },
 {
   featured: false,
-  name: "Profesional Art Printing Data",
+  name: 'Profesional Art Printing Data',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  image: "./images/ImgPlaceholder.png",
+  image: './images/ImgPlaceholder.png',
   technologies: [
-    "html", "bootstrap", "Ruby"
+    'html', 'bootstrap', 'Ruby',
   ],
-  liveLink: "#",
-  sourceLink: "#",
+  liveLink: '#',
+  sourceLink: '#',
   popUpDetail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  popUpImage: "./images/pop-up.png"
+  popUpImage: './images/pop-up.png',
 },
 {
   featured: false,
-  name: "Profesional Art Printing Data",
+  name: 'Profesional Art Printing Data',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  image: "./images/ImgPlaceholder.png",
+  image: './images/ImgPlaceholder.png',
   technologies: [
-    "html", "bootstrap", "Ruby"
+    'html', 'bootstrap', 'Ruby',
   ],
-  liveLink: "#",
-  sourceLink: "#",
+  liveLink: '#',
+  sourceLink: '#',
   popUpDetail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  popUpImage: "./images/pop-up.png"
+  popUpImage: './images/pop-up.png',
 },
 {
   featured: false,
-  name: "Profesional Art Printing Data",
+  name: 'Profesional Art Printing Data',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  image: "./images/ImgPlaceholder.png",
+  image: './images/ImgPlaceholder.png',
   technologies: [
-    "html", "bootstrap", "Ruby"
+    'html', 'bootstrap', 'Ruby',
   ],
-  liveLink: "#",
-  sourceLink: "#",
+  liveLink: '#',
+  sourceLink: '#',
   popUpDetail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  popUpImage: "./images/pop-up.png"
-},
-{
-  featured: false,
-  name: "Profesional Art Printing Data",
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  image: "./images/ImgPlaceholder.png",
-  technologies: [
-    "html", "bootstrap", "Ruby"
-  ],
-  liveLink: "#",
-  sourceLink: "#",
-  popUpDetail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  popUpImage: "./images/pop-up.png"
+  popUpImage: './images/pop-up.png',
 },
 
-]
+];
 
 const featuredContent = `
 <div class="top-img">
@@ -139,15 +122,13 @@ const featuredContent = `
 </ul>
 <button class="see-project-btn" onclick="proDetail()">See Project</button>
 </div>
-`
+`;
 
-let projectContainer = ``;
-let popUpContainer = ``;
+let projectContainer = '';
+let popUpContainer = '';
 
-for (let i = 0; i < projects.length; i+=1) {
-  if (projects[i].featured) {continue}
-  
-  let webContentNotFeatured = `
+for (let i = 0; i < projects.length; i += 1) {
+  const webContentNotFeatured = `
   <div class="projects not-featured">
   <h2 class="project-title not-featured-title">${projects[i].name}</h2>
   <p class="project-description not-featured-desc">${projects[i].description}</p>
@@ -158,8 +139,8 @@ for (let i = 0; i < projects.length; i+=1) {
   </ul>
   <button class="see-project-btn full-width-btn" onclick="proDetail()">See Project</button>
   </div>
-  `
-  let popUpContent = `
+  `;
+  const popUpContent = `
   <div class="pop-up">
   <div class="pop-title">
     <h1>Multi Post Stories</h1>
@@ -185,7 +166,7 @@ for (let i = 0; i < projects.length; i+=1) {
     </div>
   </div>
   </div>
-  `
+  `;
   popUpContainer = popUpContent;
   projectContainer += webContentNotFeatured;
 }
@@ -194,11 +175,12 @@ featuredProject.innerHTML = featuredContent;
 unfeaturedProject.innerHTML = projectContainer;
 mypop.innerHTML = popUpContainer;
 
-
 function proDetail() {
-  mypop.style.display = "block";
+  mypop.style.display = 'block';
 }
 
 function popClose() {
-  mypop.style.display = "none";
+  mypop.style.display = 'none';
 }
+
+console.log(proDetail(), popClose());
