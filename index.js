@@ -3,23 +3,29 @@ const navDeskTop = document.querySelector('.tool-bar-desk');
 const humBurger = document.querySelector('.test');
 const closeBtn = document.querySelector('.close');
 const navItems = document.querySelectorAll('.nav-item');
+const unfeaturedProject = document.querySelector('.projects-wrap')
+const featuredProject = document.querySelector('.featured')
 
 humBurger.addEventListener('click', () => {
-  dropMob.style.display = 'block';
-  navDeskTop.style.display = 'none';
-});
+  dropMob.style.display = "block";
+  navDeskTop.style.display = "none";
+
+})
 
 closeBtn.addEventListener('click', () => {
-  dropMob.style.display = 'none';
-  navDeskTop.style.display = 'flex';
-});
+  dropMob.style.display = "none";
+  navDeskTop.style.display = "flex";
+})
 
-for (let i = 0; i < navItems.length; i += 1) {
+for (let i = 0; i < navItems.length; i+=1) {
   navItems[i].addEventListener('click', () => {
-    dropMob.style.display = 'none';
-    navDeskTop.style.display = 'flex';
-  });
+    dropMob.style.display = "none";
+    navDeskTop.style.display = "flex";
+  })
 }
+
+
+//createing projects daynamically
 
 const projects = [{
   featured: true,
@@ -99,6 +105,23 @@ const projects = [{
   sourceLink: ""
 }
 ]
+
+const featuredContent = `
+<div class="top-img">
+<img src=${projects[0].image} alt="featured project" class="first-project">
+</div>
+<div class="pro-detail">
+<h2 class="project-title">${projects[0].name}</h2>
+<p class="project-description">${projects[0].description}</p>
+<ul class="used-tools">
+  <li>${projects[0].technologies[0]}</li>
+  <li>${projects[0].technologies[1]}</li>
+  <li>${projects[0].technologies[2]}</li>
+  <li>${projects[0].technologies[3]}</li>
+</ul>
+<button class="see-project-btn">See Project</button>
+</div>
+`
 
 let projectContainer = ``;
 
