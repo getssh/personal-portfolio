@@ -99,3 +99,24 @@ const projects = [{
   sourceLink: ""
 }
 ]
+
+let projectContainer = ``;
+
+for (let i = 0; i < projects.length; i+=1) {
+  if (projects[i].featured) {continue}
+  
+  let webContentNotFeatured = `
+  <div class="projects not-featured">
+  <h2 class="project-title not-featured-title">${projects[i].name}</h2>
+  <p class="project-description not-featured-desc">${projects[i].description}</p>
+  <ul class="used-tools tools-bottom">
+    <li>${projects[i].technologies[0]}</li>
+    <li>${projects[i].technologies[1]}</li>
+    <li>${projects[i].technologies[2]}</li>
+  </ul>
+  <button class="see-project-btn full-width-btn" onclick="proDetail()">See Project</button>
+  </div>
+  `
+
+  projectContainer += webContentNotFeatured;
+}
