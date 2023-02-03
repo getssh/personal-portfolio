@@ -198,3 +198,9 @@ function popClose() {
 }
 
 console.log(`${proDetail} ${popClose}`);
+
+const formEmail = document.querySelector('#email');
+const fullName = document.querySelector('#full-name');
+const Message = document.querySelector('#message')
+const form = document.querySelector('.contact-inputs');
+const errorMsg = document.querySelector('.error-message');
