@@ -199,9 +199,31 @@ function popClose() {
 
 console.log(`${proDetail} ${popClose}`);
 
-console.log('valid');
-const dataObj = {
-  name: fullName.value,
-  email: formEmail.value,
-  message: Message.value
-}
+// form validation and localStorage
+
+const formEmail = document.querySelector('#email');
+const fullName = document.querySelector('#full-name');
+const Message = document.querySelector('#message');
+const form = document.querySelector('.contact-inputs');
+const errorMsg = document.querySelector('.error-message');
+
+const userData = window.localStorage.getItem('userData');
+
+const userDataFromLocal = JSON.parse(userData);
+fullName.value = userDataFromLocal.name;
+formEmail.value = userDataFromLocal.email;
+Message.value = userDataFromLocal.message;
+
+form.addEventListener('submit', (event) => {
+  if (formEmail.value !== formEmail.value.toLowerCase()) {
+    event.preventDefault();
+    errorMsg.innerHTML = `Email address should be in lower case <b>${formEmail.value.toLowerCase()}</b>`;
+  }
+  const dataObj = {
+    name: fullName.value,
+    email: formEmail.value,
+    message: Message.value,
+  };
+
+  window.localStorage.setItem('userData', JSON.stringify(dataObj));
+});
