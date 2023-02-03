@@ -200,4 +200,8 @@ function popClose() {
 console.log(`${proDetail} ${popClose}`);
 
 console.log('valid');
-
+const dataObj = {
+  name: fullName.value,
+  email: formEmail.value,
+  message: Message.value
+}
