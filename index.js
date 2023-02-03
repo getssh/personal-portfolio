@@ -204,3 +204,10 @@ const fullName = document.querySelector('#full-name');
 const Message = document.querySelector('#message')
 const form = document.querySelector('.contact-inputs');
 const errorMsg = document.querySelector('.error-message');
+
+form.addEventListener('submit', (event) => {
+  if (formEmail.value != formEmail.value.toLowerCase()) {
+    event.preventDefault();
+    errorMsg.innerHTML = `Email address should be in lower case <b>${formEmail.value.toLowerCase()}</b>`
+  }
+})
