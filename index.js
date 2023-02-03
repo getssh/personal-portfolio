@@ -178,22 +178,22 @@ featuredProject.innerHTML = featuredContent;
 unfeaturedProject.innerHTML = projectContainer;
 mypop.innerHTML = popUpContainer;
 
-const temp = document.querySelectorAll('.pop-up');
+const popUp = document.querySelectorAll('.pop-up');
 
 function proDetail(idNum) {
   mypop.style.display = 'block';
 
-  for (let i = 0; i < temp.length; i += 1) {
-    if (temp[i].id === idNum.id) {
-      temp[i].style.display = 'block';
+  for (let i = 0; i < popUp.length; i += 1) {
+    if (popUp[i].id === idNum.id) {
+      popUp[i].style.display = 'block';
     }
   }
 }
 
 function popClose() {
   mypop.style.display = 'none';
-  for (let i = 0; i < temp.length; i += 1) {
-    temp[i].style.display = 'none';
+  for (let i = 0; i < popUp.length; i += 1) {
+    popUp[i].style.display = 'none';
   }
 }
 
