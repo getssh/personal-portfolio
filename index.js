@@ -198,3 +198,6 @@ function popClose() {
 }
 
 console.log(`${proDetail} ${popClose}`);
+
+console.log('valid');
+
