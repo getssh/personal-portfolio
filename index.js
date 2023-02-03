@@ -120,36 +120,39 @@ const featuredContent = `
   <li>${projects[0].technologies[2]}</li>
   <li>${projects[0].technologies[3]}</li>
 </ul>
-<button class="see-project-btn" onclick="proDetail()">See Project</button>
+<button class="see-project-btn" onclick="proDetail(pop0)">See Project</button>
 </div>
 `;
 
 let projectContainer = '';
 let popUpContainer = '';
+const myPopId = '#pop';
 
 for (let i = 0; i < projects.length; i += 1) {
+  let technologies = '';
+  for (let j = 0; j < projects[i].technologies.length; j += 1) {
+    technologies += `<li>${projects[i].technologies[j]}</li>`;
+  }
   const webContentNotFeatured = `
   <div class="projects not-featured">
   <h2 class="project-title not-featured-title">${projects[i].name}</h2>
   <p class="project-description not-featured-desc">${projects[i].description}</p>
   <ul class="used-tools tools-bottom">
-    <li>${projects[i].technologies[0]}</li>
-    <li>${projects[i].technologies[1]}</li>
-    <li>${projects[i].technologies[2]}</li>
+    ${technologies}
   </ul>
-  <button class="see-project-btn full-width-btn" onclick="proDetail()">See Project</button>
+  <a href=${myPopId}${i} class="full-width-btn" style="text-decoration:none;" onclick="proDetail(pop${i})">
+    <button class="see-project-btn full-width-btn">See Project</button>
+  </a>
   </div>
   `;
   const popUpContent = `
-  <div class="pop-up">
+  <div class="pop-up" id="pop${i}">
   <div class="pop-title">
-    <h1>Multi Post Stories</h1>
+    <h1>${projects[i].name}</h1>
     <i class="fa-solid fa-xmark fa-2x pop-close" onclick="popClose()"></i>
   </div>
   <ul class="popup-tools">
-    <li>${projects[i].technologies[0]}</li>
-    <li>${projects[i].technologies[1]}</li>
-    <li>${projects[i].technologies[2]}</li>
+    ${technologies}
   </ul>
   <div class="pop-detail">
     <div class="popup-image">
@@ -167,7 +170,7 @@ for (let i = 0; i < projects.length; i += 1) {
   </div>
   </div>
   `;
-  popUpContainer = popUpContent;
+  popUpContainer += popUpContent;
   projectContainer += webContentNotFeatured;
 }
 
@@ -175,12 +178,23 @@ featuredProject.innerHTML = featuredContent;
 unfeaturedProject.innerHTML = projectContainer;
 mypop.innerHTML = popUpContainer;
 
-function proDetail() {
+const temp = document.querySelectorAll('.pop-up');
+
+function proDetail(idNum) {
   mypop.style.display = 'block';
+
+  for (let i = 0; i < temp.length; i += 1) {
+    if (temp[i].id === idNum.id) {
+      temp[i].style.display = 'block';
+    }
+  }
 }
 
 function popClose() {
   mypop.style.display = 'none';
+  for (let i = 0; i < temp.length; i += 1) {
+    temp[i].style.display = 'none';
+  }
 }
 
-console.log(proDetail(), popClose());
+console.log(`${proDetail} ${popClose}`);
