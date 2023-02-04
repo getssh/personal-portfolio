@@ -214,11 +214,7 @@ fullName.value = userDataFromLocal.name;
 formEmail.value = userDataFromLocal.email;
 Message.value = userDataFromLocal.message;
 
-form.addEventListener('submit', (event) => {
-  if (formEmail.value !== formEmail.value.toLowerCase()) {
-    event.preventDefault();
-    errorMsg.innerHTML = `Email address should be in lower case <b>${formEmail.value.toLowerCase()}</b>`;
-  }
+form.addEventListener('change', () => {
   const dataObj = {
     name: fullName.value,
     email: formEmail.value,
@@ -226,4 +222,11 @@ form.addEventListener('submit', (event) => {
   };
 
   window.localStorage.setItem('userData', JSON.stringify(dataObj));
+});
+
+form.addEventListener('submit', (event) => {
+  if (formEmail.value !== formEmail.value.toLowerCase()) {
+    event.preventDefault();
+    errorMsg.innerHTML = `Email address should be in lower case <b>${formEmail.value.toLowerCase()}</b>`;
+  }
 });
