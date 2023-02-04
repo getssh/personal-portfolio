@@ -500,6 +500,13 @@ textarea {
   margin-top: -1.5rem;
 }
 
+.error-message {
+  align-self: flex-start;
+  margin-top: -1rem;
+  color: #f00;
+  font-size: 0.9rem;
+}
+
 @media screen and (min-width: 768px) {
   .wrapper {
     background-image: url('./images/Illustration-header.png');

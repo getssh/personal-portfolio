@@ -198,3 +198,57 @@ function popClose() {
 }
 
 console.log(`${proDetail} ${popClose}`);
+
+// form validation and localStorage
+// const formInputs = document.querySelectorAll('.input');
+// const fullNameInput = document.querySelector('#full-name');
+// const emailInput = document.querySelector('#email');
+// const messageInput = document.querySelector('#message');
+
+// formInputs.forEach((input) => {
+//   input.addEventListener('keyup', () => {
+//     const formData = {
+//       name: fullNameInput.value,
+//       email: emailInput.value,
+//       message: messageInput.value,
+//     };
+//     const formDataJSON = JSON.stringify(formData);
+//     localStorage.setItem('formData', formDataJSON);
+//   });
+// });
+
+// const formData = JSON.parse(localStorage.getItem('formData'));
+
+// fullNameInput.value = formData.name;
+// emailInput.value = formData.email;
+// messageInput.value = formData.message;
+
+const formEmail = document.querySelector('#email');
+const fullName = document.querySelector('#full-name');
+const Message = document.querySelector('#message');
+const form = document.querySelector('.contact-inputs');
+const errorMsg = document.querySelector('.error-message');
+
+form.addEventListener('keyup', () => {
+  const dataObj = {
+    name: fullName.value,
+    email: formEmail.value,
+    message: Message.value,
+  };
+
+  window.localStorage.setItem('userData', JSON.stringify(dataObj));
+});
+
+const userData = window.localStorage.getItem('userData');
+
+const userDataFromLocal = JSON.parse(userData);
+fullName.value = userDataFromLocal.name;
+formEmail.value = userDataFromLocal.email;
+Message.value = userDataFromLocal.message;
+
+form.addEventListener('submit', (event) => {
+  if (formEmail.value !== formEmail.value.toLowerCase()) {
+    event.preventDefault();
+    errorMsg.innerHTML = `Email address should be in lower case <b>${formEmail.value.toLowerCase()}</b>`;
+  }
+});
