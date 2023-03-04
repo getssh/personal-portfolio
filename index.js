@@ -28,16 +28,16 @@ for (let i = 0; i < navItems.length; i += 1) {
 
 const projects = [{
   featured: true,
-  name: 'Multi-Post Stories',
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  image: './images/ImgPlaceholder.png',
+  name: 'To-do List',
+  description: 'Todo application that can add, edit, update, and delete tasks. It also perform bulk edits like delete all competed tasks and more. All tasks are created dynamically using JavaScript. HTML, CSS, and JavaScript, web pack has been used for this project.',
+  image: './images/todo-project.png',
   technologies: [
     'css', 'html', 'bootstrap', 'Ruby',
   ],
-  liveLink: '#',
-  sourceLink: '#',
-  popUpDetail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  popUpImage: './images/pop-up.png',
+  liveLink: 'https://getssh.github.io/todo-list-structure/',
+  sourceLink: 'https://github.com/getssh/todo-list-structure',
+  popUpDetail: 'Todo application that can add, edit, update, and delete tasks. It also perform bulk edits like delete all competed tasks and more. All tasks are created dynamically using JavaScript. HTML, CSS, and JavaScript, web pack has been used for this project.',
+  popUpImage: './images/todo-project.png',
 },
 {
   featured: false,
