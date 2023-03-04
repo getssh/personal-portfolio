@@ -621,23 +621,39 @@ textarea {
     margin-bottom: 0;
   }
 
-  .not-featured:nth-child(2),
-  .not-featured:nth-child(5) {
+  .not-featured:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('images/todo-list.png');
+  }
+
+  .not-featured:nth-child(2) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('images/Img-Placeholder1.png');
   }
 
-  .not-featured:nth-child(3),
-  .not-featured:nth-child(6) {
+  .not-featured:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('images/Img-Placeholder1.png');
+  }
+
+  .not-featured:nth-child(4) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('images/Img-Placeholder1.png');
+  }
+
+  .not-featured:nth-child(5) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('images/Img-Placeholder2.png');
   }
 
-  .not-featured:nth-child(1),
-  .not-featured:nth-child(4) {
+  .not-featured:nth-child(6) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('images/hover-bg.png');
   }
 
   .not-featured:hover {
     background-image: url('images/hover-bg.png');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .not-featured:hover:nth-child(1) {
+    background-image: url('images/todo-project.png');
     background-position: center;
     background-size: cover;
     cursor: pointer;
@@ -727,6 +743,11 @@ textarea {
   .separate-line {
     flex-grow: 2;
     align-self: flex-end;
+  }
+
+  .pop-up {
+    width: 80%;
+    margin: auto;
   }
 
   .pop-detail {
