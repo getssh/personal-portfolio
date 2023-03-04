@@ -637,7 +637,7 @@ textarea {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('images/Img-Placeholder1.png');
   }
 
-  .not-featured:nth-child(6) {
+  .not-featured:nth-child(5) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('images/Img-Placeholder2.png');
   }
 
