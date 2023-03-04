@@ -729,6 +729,11 @@ textarea {
     align-self: flex-end;
   }
 
+  .pop-up {
+    width: 80%;
+    margin: auto;
+  }
+
   .pop-detail {
     display: flex;
     justify-content: center;

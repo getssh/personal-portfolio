@@ -30,14 +30,14 @@ const projects = [{
   featured: true,
   name: 'To-do List',
   description: 'Todo application that can add, edit, update, and delete tasks. It also perform bulk edits like delete all competed tasks and more. All tasks are created dynamically using JavaScript. HTML, CSS, and JavaScript, web pack has been used for this project.',
-  image: './images/todo-project.png',
+  image: './images/todo-list.png',
   technologies: [
-    'css', 'html', 'bootstrap', 'Ruby',
+    'css', 'html', 'bootstrap', 'JavaScript',
   ],
   liveLink: 'https://getssh.github.io/todo-list-structure/',
   sourceLink: 'https://github.com/getssh/todo-list-structure',
   popUpDetail: 'Todo application that can add, edit, update, and delete tasks. It also perform bulk edits like delete all competed tasks and more. All tasks are created dynamically using JavaScript. HTML, CSS, and JavaScript, web pack has been used for this project.',
-  popUpImage: './images/todo-project.png',
+  popUpImage: './images/todo-list.png',
 },
 {
   featured: false,
