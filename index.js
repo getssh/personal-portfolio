@@ -160,10 +160,10 @@ for (let i = 0; i < projects.length; i += 1) {
     </div>
     <div class="visit">
     <p>${projects[i].popUpDetail}</p>
-      <a href=${projects[i].liveLink}>
+      <a href=${projects[i].liveLink} target="_blank">
         <button class="live see-project-btn">See Live <i class="fa-solid fa-circle-arrow-up"></i></button>
       </a>
-      <a href=${projects[i].sourceLink}>
+      <a href=${projects[i].sourceLink} target="_blank">
         <button class="live see-project-btn">See Source <i class="fa-brands fa-github"></i></button>
       </a>
     </div>
